@@ -28,14 +28,16 @@ const Sidevar = ({
                         <button onClick={() => onDeleateNote(note.id)}>削除</button>
                     </div>
                     <p>{note.content}</p>
-                    <small>{new Date(note.modDate).toLocaleDateString("ja-jp", {
-                        hour: "2-digit",
-                        minute: "2-digit",
-                    })}</small>
+                    <small>
+                        {new Date(note.modDate).toLocaleDateString("ja-jp", {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                        })}
+                    </small>
                 </div>
             ))}
         </div>
-    </div>;
+    </div>
 };
 
 export default Sidevar;

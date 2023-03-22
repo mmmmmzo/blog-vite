@@ -17,7 +17,6 @@ function Main({ activeNote, onUpdateNote }) {
                 <li>デフォルトのコンテンツが出来る</li>
                 <li>コンテンツ選択⇒内容のリアルタイム変更</li>
             </ol>
-
         </div>
     }
     return (
@@ -37,7 +36,7 @@ function Main({ activeNote, onUpdateNote }) {
                 ></textarea>
             </div>
             <div className='app-main-note-preview'>
-                ▼こちらに反映
+                ▼こちらに入力したものが反映される
                 <h1 className='preview-title'>{activeNote.title}</h1>
                 <ReactMarkdown className='markdown-preview'>
                     {activeNote.content}
