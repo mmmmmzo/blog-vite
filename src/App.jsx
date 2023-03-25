@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Main from './components/Main';
-import Sidevar from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 import uuid from "react-uuid";
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <Sidevar
+      <Sidebar
         onAddNote={onAddNote}
         notes={notes}
         onDeleateNote={onDeleateNote}

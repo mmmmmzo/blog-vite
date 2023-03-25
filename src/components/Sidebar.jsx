@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidevar = ({
+const Sidebar = ({
     onAddNote,
     notes,
     onDeleateNote,
@@ -40,4 +40,4 @@ const Sidevar = ({
     </div>
 };
 
-export default Sidevar;
+export default Sidebar;
